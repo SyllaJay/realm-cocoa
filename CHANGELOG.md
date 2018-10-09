@@ -4,10 +4,11 @@ x.y.z Release notes (yyyy-MM-dd)
 * None.
 
 ### Fixed
-* <How to hit and notice issue? what was the impact?> ([#????](https://github.com/realm/realm-js/issues/????), since v?.?.?)
-* None.
-
-<!-- ### Breaking Changes - ONLY INCLUDE FOR NEW MAJOR version -->
+* Add some missing validation in the getters and setters of properties on
+  managed Realm objects, which would sometimes result in an application
+  crashing with a segfault rather than the appropriate exception being thrown
+  when trying to write to an object which has been deleted.
+  (Since 2.8.0)
 
 ### Compatibility
 * File format: Generates Realms with format v9 (Reads and upgrades all previous formats)
