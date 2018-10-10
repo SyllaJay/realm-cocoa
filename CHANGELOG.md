@@ -8,7 +8,7 @@ x.y.z Release notes (yyyy-MM-dd)
   managed Realm objects, which would sometimes result in an application
   crashing with a segfault rather than the appropriate exception being thrown
   when trying to write to an object which has been deleted.
-  (Since 2.8.0)
+  (PR [#5952](https://github.com/realm/realm-cocoa/pull/5952), since 2.8.0)
 
 ### Compatibility
 * File format: Generates Realms with format v9 (Reads and upgrades all previous formats)
